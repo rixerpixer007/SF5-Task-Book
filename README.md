@@ -52,6 +52,10 @@ Storage belongs to the same browser profile and origin: the original file, local
 
 ## Publishing
 
+The public reader is hosted at **https://rixerpixer007.github.io/SF5-Task-Book/**.
+
+The workflow in `.github/workflows/deploy.yml` builds and deploys the site on every push to `main`. It can also be run manually from the repository's **Actions** tab. GitHub **Settings → Pages → Source** must be set to **GitHub Actions**. The workflow uses the Pages base path so assets load correctly under the repository URL; only the built `dist/` contents are published.
+
 Run `npm ci` and `npm run build`, then upload the complete contents of `dist/` to a static host. The relative asset paths support a domain root or a subdirectory. Include `credits.txt` and `licenses/` from the build alongside the HTML and assets. No server-side application or secrets are needed.
 
 Use `npm run preview` for a local production smoke check. Source/build checks and live-browser checks provide separate evidence; a successful build alone does not verify rendering or browser persistence. Keep the published origin stable so returning readers keep access to their browser-local progress.
