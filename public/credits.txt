@@ -1,0 +1,18 @@
+SkyFactory 5 Task Book Viewer - Third-party credits
+
+Unofficial viewer. Original task text by Darkosto and the SkyFactory 5 team.
+Source snapshot: pack 5.0.8, commit aae443225cfb87da6ba1848030d89ee2423ccc9a
+https://github.com/DarkPacks/SkyFactory-5/blob/aae443225cfb87da6ba1848030d89ee2423ccc9a/src/minecraft/config/checklist/tasks.txt
+
+Minecraft-style font by Idrees Hassan, copyright 2022, under the SIL Open Font License 1.1.
+https://github.com/IdreesInc/Minecraft-Font
+Full license: licenses/Minecraft-Font-OFL.txt
+
+Minecraft GUI and dirt textures: copyright Mojang/Microsoft.
+https://github.com/Mojang/bedrock-samples
+https://github.com/InventivetalentDev/minecraft-assets/tree/1.20.1/assets/minecraft/textures/gui
+Minecraft usage guidelines and the respective asset owners' rights apply.
+This project is not affiliated with Mojang or Microsoft.
+
+Checklist GUI reference: Checklist-Forge-1.20.1-1.3.0 by Kehaan and LCLC98.
+https://www.curseforge.com/minecraft/mc-mods/checklist/files/5075898

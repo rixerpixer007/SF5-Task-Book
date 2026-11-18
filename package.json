@@ -1,0 +1,21 @@
+{
+  "name": "sf5-task-book",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run check && vite build",
+    "preview": "vite preview",
+    "check": "node --check src/bootstrap.js && node --check src/main.js && node --check src/book-layout.js && node --check src/book-search.js && node --check src/reader-storage.js && node --check src/sidebar-motion.js && node --check vite.config.js && node --test scripts/*.test.mjs && node scripts/check-book.mjs && npm run format:check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10",
+    "vite": "^8.3.8"
+  }
+}

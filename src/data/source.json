@@ -1,0 +1,9 @@
+{
+  "pack": "SkyFactory 5",
+  "version": "5.0.8",
+  "minecraftVersion": "1.20.1",
+  "retrieved": "2026-11-11",
+  "commit": "aae443225cfb87da6ba1848030d89ee2423ccc9a",
+  "source": "https://github.com/DarkPacks/SkyFactory-5/blob/aae443225cfb87da6ba1848030d89ee2423ccc9a/src/minecraft/config/checklist/tasks.txt",
+  "authors": "Darkosto and the SkyFactory 5 team"
+}

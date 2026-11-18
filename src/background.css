@@ -1,0 +1,31 @@
+/* Choose a scene with <body data-background="…">. Each preset only sets
+   these variables; the book, sidebar, and fit-to-screen layout stay separate. */
+body {
+  --scene-color: #111720;
+  --scene-texture: none;
+  --scene-tile-size: 64px;
+  --scene-overlay: transparent;
+  isolation: isolate;
+  background-color: var(--scene-color);
+}
+body[data-background='dirt'] {
+  --scene-color: #211c16;
+  --scene-texture: url('./assets/minecraft/dirt.png');
+  --scene-overlay: rgb(12 10 8 / 78%);
+}
+body::before {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  background-color: var(--scene-color);
+  background-image:
+    linear-gradient(var(--scene-overlay), var(--scene-overlay)),
+    var(--scene-texture);
+  background-size:
+    auto,
+    var(--scene-tile-size) var(--scene-tile-size);
+  background-repeat: no-repeat, repeat;
+  image-rendering: pixelated;
+}

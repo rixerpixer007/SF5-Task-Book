@@ -1,0 +1,685 @@
+@font-face {
+  font-family: Minecraft;
+  src: url('./assets/minecraft/Minecraft.otf') format('opentype');
+  font-display: block;
+  font-weight: 400;
+}
+:root {
+  color-scheme: dark;
+  --sidebar-width: 248px;
+  --sidebar-space: var(--sidebar-width);
+  --foreground: #e4e8ed;
+  --primary: #a8d7b5;
+  --font-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  margin: 0;
+  padding: 0;
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+}
+a {
+  color: var(--primary);
+}
+button,
+input,
+select {
+  font: inherit;
+}
+.hint,
+.foot {
+  font-family: Minecraft, monospace;
+  font-synthesis: none;
+  -webkit-font-smoothing: none;
+  text-shadow: 1px 1px #0c0906;
+}
+.hint {
+  color: #dcc6a1;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+.reader-status {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  height: 28px;
+}
+#status {
+  grid-column: 2;
+  text-align: center;
+  white-space: nowrap;
+}
+.search-results {
+  display: inline-flex;
+  grid-column: 3;
+  justify-self: end;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  max-width: 100%;
+}
+#search-count {
+  min-width: 0;
+}
+.search-step {
+  display: grid;
+  place-items: center;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #dcc6a1;
+}
+.search-step:hover,
+.search-step:focus-visible {
+  outline: none;
+  color: #fff0cc;
+}
+.search-step:disabled {
+  color: #8d7b60;
+  opacity: 0.55;
+  cursor: default;
+}
+.tools {
+  container: reader-tools / inline-size;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: var(--reader-book-width, 100%);
+  margin: 0 auto 16px;
+}
+.book-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  min-height: 54px;
+  border: 9px solid transparent;
+  border-image: url('./assets/minecraft/book_back.png') 13 / 9px / 0 stretch;
+  /* Underlap the frame by 1px so fractional slice edges cannot show the scene. */
+  background: linear-gradient(#fdf8ec, #fdf8ec) center / calc(100% - 16px)
+    calc(100% - 16px) no-repeat;
+  background-origin: border-box;
+  padding: 2px 9px;
+  image-rendering: pixelated;
+  color-scheme: light;
+}
+.search-icon {
+  flex: 0 0 18px;
+  color: #947851;
+}
+.book-search input[type='search'] {
+  width: 100%;
+  min-width: 0;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  padding: 4px 0;
+  background: transparent;
+  color: #40301f;
+  caret-color: #725431;
+  font:
+    16px/1.4 Minecraft,
+    monospace;
+  font-synthesis: none;
+  -webkit-font-smoothing: none;
+}
+.book-search input::placeholder {
+  color: #8a7455;
+  opacity: 1;
+}
+.book-search input:focus-visible {
+  outline: none;
+}
+.book-search input::-webkit-search-cancel-button {
+  cursor: pointer;
+  filter: grayscale(1) sepia(1);
+}
+button {
+  cursor: pointer;
+}
+.layout {
+  display: grid;
+  flex: 1;
+  grid-template-columns: var(--sidebar-space) minmax(0, 1fr);
+  gap: 0;
+  align-items: start;
+}
+.sidebar-panel {
+  position: fixed;
+  z-index: 10;
+  inset: 12px auto 12px 12px;
+  width: calc(var(--sidebar-width) - 24px);
+  max-width: calc(100vw - 24px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 9px solid transparent;
+  border-image: url('./assets/minecraft/book_back.png') 13 / 9px / 0 stretch;
+  border-radius: 0;
+  background: #f4ecda;
+  background-clip: padding-box;
+  image-rendering: pixelated;
+  color: #5b452d;
+  color-scheme: light;
+}
+.sidebar-heading {
+  flex: 0 0 auto;
+  padding: 12px 52px 18px 19px;
+  text-align: left;
+  font:
+    14px/20px Minecraft,
+    monospace;
+  color: #765637;
+}
+#nav {
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #c3ad88 transparent;
+  padding: 0 7px 9px;
+  margin-bottom: 8px;
+}
+#nav a {
+  display: block;
+  text-decoration: none;
+  font:
+    12px/1.6 Minecraft,
+    monospace;
+  color: #796248;
+  padding: 10px 12px;
+  margin-bottom: 4px;
+  border-radius: 0;
+  clip-path: polygon(
+    6px 0,
+    calc(100% - 6px) 0,
+    calc(100% - 6px) 6px,
+    100% 6px,
+    100% calc(100% - 6px),
+    calc(100% - 6px) calc(100% - 6px),
+    calc(100% - 6px) 100%,
+    6px 100%,
+    6px calc(100% - 6px),
+    0 calc(100% - 6px),
+    0 6px,
+    6px 6px
+  );
+  overflow-wrap: anywhere;
+}
+#nav a:hover {
+  background: #ece1cd;
+  color: #5a4128;
+}
+#nav a[aria-current] {
+  background: #e4d1ab;
+  color: #4d351f;
+}
+#nav a[aria-current]:hover {
+  background: #ddc69e;
+}
+#nav a:focus-visible {
+  outline: none;
+  background: #dbc194;
+  color: #382817;
+}
+.sidebar-toggle {
+  position: fixed;
+  z-index: 12;
+  top: 24px;
+  left: calc(var(--sidebar-width) - 68px);
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #80603d;
+}
+.sidebar-toggle:hover,
+.sidebar-toggle:focus-visible {
+  outline: none;
+  color: #3e2919;
+}
+.sidebar-toggle:hover .sidebar-icon-pane,
+.sidebar-toggle:focus-visible .sidebar-icon-pane {
+  opacity: 0.55;
+}
+.sidebar-collapsed .sidebar-toggle {
+  color: #c4aa80;
+}
+.sidebar-collapsed .sidebar-toggle:hover,
+.sidebar-collapsed .sidebar-toggle:focus-visible {
+  color: #f4e5c5;
+}
+.sidebar-backdrop {
+  display: none;
+}
+body.sidebar-collapsed {
+  --sidebar-space: 0px;
+}
+.sidebar-collapsed .sidebar-toggle {
+  top: 16px;
+  left: 16px;
+}
+@media (min-width: 1001px) {
+  .sidebar-collapsed .reader {
+    padding-inline: 72px;
+  }
+}
+.reader {
+  grid-column: 2;
+  min-width: 0;
+  padding: 24px 28px;
+}
+.book-viewport {
+  --book-scale: 1;
+  max-width: var(--reader-book-width, 100%);
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.book-viewport:focus {
+  outline: none;
+}
+.minecraft-book {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 352px;
+  height: 220px;
+  margin-left: -176px;
+  transform: scale(var(--book-scale));
+  transform-origin: top center;
+  color: #171a16;
+  color-scheme: light;
+  font-family: Minecraft, monospace;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 9px;
+  font-synthesis: none;
+  font-kerning: none;
+  -webkit-font-smoothing: none;
+  image-rendering: pixelated;
+}
+.book-leaves {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 176px 176px;
+}
+.book-page {
+  position: relative;
+  width: 176px;
+  height: 220px;
+}
+.book-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: url('./assets/checklist/book.png') -24.166667px 0 / 309.333333px
+    309.333333px no-repeat;
+  transform: scaleX(-1);
+}
+.book-page:nth-child(even)::before {
+  transform: none;
+}
+.page-content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 139px;
+  height: 200px;
+}
+.page-number {
+  position: absolute;
+  bottom: 17px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 139px;
+  text-align: center;
+  color: #aa9271;
+  font-size: 5px;
+  line-height: 7px;
+  white-space: nowrap;
+}
+.book-line {
+  position: absolute;
+  width: 139px;
+  height: 9px;
+  white-space: pre;
+  text-align: center;
+}
+.line-text {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+.line-ink {
+  display: inline-block;
+}
+.book-line a:focus-visible {
+  outline: none;
+  text-decoration-style: double;
+}
+.book-line a {
+  color: #0000aa;
+  text-decoration: underline;
+  text-underline-offset: 1px;
+}
+.search-hit {
+  background: rgb(219 174 59 / 48%);
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  border-radius: 0;
+}
+.book-divider .line-ink {
+  font-size: 0;
+}
+.book-divider::before,
+.book-divider::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: repeating-linear-gradient(
+    90deg,
+    currentColor 0 3px,
+    transparent 3px 4px
+  );
+}
+.book-divider::before {
+  top: 3px;
+}
+.book-divider::after {
+  top: 6px;
+}
+.book-heading {
+  font-weight: 400;
+}
+.task-line {
+  padding-left: 20px;
+  text-align: left;
+}
+.task-line input {
+  /* Continuation lines must not cover the checkbox hit area. */
+  z-index: 1;
+  appearance: none;
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: #d8cbae;
+  box-shadow:
+    inset 1px 1px #8c7b60,
+    inset -1px -1px #f1e8d5;
+  cursor: pointer;
+}
+.task-line input:hover,
+.task-line input:focus-visible {
+  outline: none;
+  background: #c6b695;
+}
+.task-line input:checked::after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: -1px;
+  width: 18px;
+  height: 18px;
+  background: url('./assets/checklist/beacon.png') -90px -220px / 256px 256px
+    no-repeat;
+  image-rendering: pixelated;
+}
+.page-turn {
+  position: absolute;
+  z-index: 3;
+  top: var(--page-arrow-top, 187px);
+  width: 23px;
+  height: 13px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: url('./assets/checklist/book.png');
+  background-size: 256px 256px;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+.page-turn:disabled {
+  visibility: hidden;
+}
+.previous {
+  left: 45px;
+  background-position: 0 -205px;
+}
+.next {
+  left: 297px;
+  background-position: 0 -192px;
+}
+.previous:hover,
+.previous:focus-visible {
+  outline: none;
+  background-position: -23px -205px;
+}
+.next:hover,
+.next:focus-visible {
+  outline: none;
+  background-position: -23px -192px;
+}
+.foot {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #bea98a;
+  margin: auto 0 0 var(--sidebar-space);
+  padding: 16px 24px 20px;
+  text-align: center;
+}
+.foot a {
+  color: inherit;
+  text-decoration: none;
+}
+.foot a:hover,
+.foot a:focus-visible {
+  outline: none;
+  color: #ead9b8;
+  text-decoration: underline;
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 1000px) {
+  body {
+    --sidebar-space: 0px;
+  }
+  .reader {
+    padding-top: 68px;
+  }
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    z-index: 9;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    background: #11172080;
+  }
+}
+@media (max-width: 600px) {
+  .reader {
+    padding: 68px 12px 20px;
+  }
+  .tools {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* One full-size leaf on phones; pagination uses the same source pages. */
+.single-page .reader {
+  padding: 16px max(12px, env(safe-area-inset-right)) 12px
+    max(12px, env(safe-area-inset-left));
+}
+.single-page .book-search {
+  margin-left: 52px;
+}
+.single-page .reader-status {
+  height: 64px;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 20px 44px;
+  gap: 0;
+}
+.single-page #status {
+  grid-column: 1;
+  grid-row: 1;
+}
+.single-page .search-results {
+  grid-column: 1;
+  grid-row: 2;
+}
+.single-page .search-step {
+  flex-basis: 44px;
+  width: 44px;
+  height: 44px;
+}
+.single-page:not(.sidebar-collapsed) {
+  overflow: hidden;
+}
+.single-page .minecraft-book {
+  width: 176px;
+  margin-left: -88px;
+}
+.single-page .book-leaves {
+  grid-template-columns: 176px;
+}
+.single-page .page-turn {
+  top: calc(var(--page-arrow-top) - 7px);
+  width: 28px;
+  height: 28px;
+  background: none;
+  touch-action: manipulation;
+}
+.single-page .page-turn::before {
+  content: '';
+  position: absolute;
+  width: 23px;
+  height: 13px;
+  left: 2px;
+  top: 7px;
+  background: url('./assets/checklist/book.png') 0 -205px / 256px 256px
+    no-repeat;
+}
+.single-page .previous {
+  left: 22px;
+}
+.single-page .next {
+  left: 126px;
+}
+.single-page .next::before {
+  background-position: 0 -192px;
+}
+.single-page .previous:is(:hover, :focus-visible)::before {
+  background-position: -23px -205px;
+}
+.single-page .next:is(:hover, :focus-visible)::before {
+  background-position: -23px -192px;
+}
+.single-page .sidebar-toggle {
+  width: 44px;
+  height: 44px;
+}
+.single-page .foot {
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+}
+
+@media (max-height: 500px) {
+  .reader-status {
+    font-size: 10px;
+    gap: 4px 12px;
+  }
+  .search-count-label {
+    display: none;
+  }
+}
+
+@container reader-tools (max-width: 720px) {
+  .search-count-label {
+    display: none;
+  }
+  .reader-status {
+    font-size: 12px;
+  }
+}
+@container reader-tools (max-width: 280px) {
+  .reader-status {
+    font-size: 8px;
+    gap: 4px;
+  }
+  .search-step {
+    flex-basis: 20px;
+    width: 20px;
+  }
+  .search-results {
+    gap: 0;
+  }
+}
+
+@container reader-tools (max-width: 420px) {
+  .reader-status {
+    height: 48px;
+    grid-template-rows: 20px 28px;
+    row-gap: 0;
+  }
+  #status {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  .search-results {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .motion-ready .layout {
+    transition: grid-template-columns 220ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .motion-ready .foot {
+    transition: margin-left 220ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .motion-ready .reader {
+    transition: padding-inline 220ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .motion-ready .sidebar-toggle {
+    transition:
+      left 220ms cubic-bezier(0.22, 1, 0.36, 1),
+      top 220ms cubic-bezier(0.22, 1, 0.36, 1),
+      color 120ms ease-out;
+  }
+}

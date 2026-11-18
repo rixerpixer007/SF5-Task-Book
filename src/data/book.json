@@ -1,0 +1,1442 @@
+[
+  {
+    "title": "Welcome to SkyFactory® 5",
+    "page": 1,
+    "entries": [
+      {
+        "text": "You probably noticed there's no color! Don't worry, your computer isn't broken. Each of the 16 Minecraft Colors will have to be discovered in a variety of ways: Crafting, in-world actions, etc. If you get stuck, the Advancements should help you out.",
+        "page": 1,
+        "task": false
+      }
+    ]
+  },
+  {
+    "title": "How to Use This Book",
+    "page": 2,
+    "entries": [
+      {
+        "text": "Use the arrows at the bottom of the pages to navigate. You will see challenges separated into ages that represent the general path of progression, although you do not need to do them in order. Simply check the box next to each challenge on completion. Careful though, tasks become increasingly difficult as you progress! Also, don't forget to craft yourself a Task Table to store this book!",
+        "page": 2,
+        "task": false
+      }
+    ]
+  },
+  {
+    "title": "Mob Spawning",
+    "page": 3,
+    "entries": [
+      {
+        "text": "Mobs do not spawn initially and require you to complete Gateways to obtain Trophies, these can be placed and activated to allow that mob to spawn around the player.",
+        "page": 3,
+        "task": false
+      },
+      {
+        "text": "Mobs will spawn on most normal blocks and don't require specific blocks like grass or water. You do not need to worry about Biomes, Dimensions, etc, only light level and distance requirements matter.",
+        "page": 3,
+        "task": false
+      },
+      {
+        "text": "Light levels matter when spawning mobs, Passives from 8 to 15 while Hostiles require light levels 0 to 7 You can easily find the light level by pressing F7",
+        "page": 3,
+        "task": false
+      },
+      {
+        "text": "Mobs only spawn > 24 blocks away from the player",
+        "page": 3,
+        "task": false
+      },
+      {
+        "text": "Additionally, Mobs will spawn from Spawners found in the world. They can be mined, without Silk Touch, and upgraded. Using a Trophy on them will change which mobs spawn.",
+        "page": 3,
+        "task": false
+      }
+    ]
+  },
+  {
+    "title": "Special Thank You to:",
+    "page": 4,
+    "entries": [
+      {
+        "text": "BlayTheNinth, Darkhax, Dutchs, FirstNecron, GoryMoon, Jaredlll08, KingLemming, linuxchr, Lothrazar, MarioLuigi7896, MrBysco, Muddr, Shadows_of_Fire, Twitch Chat",
+        "page": 4,
+        "task": false
+      },
+      {
+        "text": "To everyone who has supported the development process",
+        "page": 4,
+        "task": false
+      },
+      {
+        "text": "And finally, big thanks to the modding community for making this happen!",
+        "page": 4,
+        "task": false
+      }
+    ]
+  },
+  {
+    "title": "From the Developer",
+    "page": 5,
+    "entries": [
+      {
+        "text": "Hi! My name is Darkosto and I am the developer of SkyFactory 5",
+        "page": 5,
+        "task": false
+      },
+      {
+        "text": "If you have any questions head on over to [Twitch](https://twitch.tv/darkosto) or the official [Discord Community](https://discord.gg/darkosto)",
+        "page": 5,
+        "task": false
+      },
+      {
+        "text": "Thanks for playing the modpack",
+        "page": 5,
+        "task": false
+      }
+    ]
+  },
+  {
+    "title": "Discover the Colors",
+    "page": 6,
+    "entries": [
+      {
+        "text": "Discover ==Black==",
+        "page": 6,
+        "task": true,
+        "id": "t1"
+      },
+      {
+        "text": "Discover ==Blue==",
+        "page": 6,
+        "task": true,
+        "id": "t2"
+      },
+      {
+        "text": "Discover ==Brown==",
+        "page": 6,
+        "task": true,
+        "id": "t3"
+      },
+      {
+        "text": "Discover ==Cyan==",
+        "page": 6,
+        "task": true,
+        "id": "t4"
+      },
+      {
+        "text": "Discover ==Gray==",
+        "page": 6,
+        "task": true,
+        "id": "t5"
+      },
+      {
+        "text": "Discover ==Green==",
+        "page": 6,
+        "task": true,
+        "id": "t6"
+      },
+      {
+        "text": "Discover ==Light Blue==",
+        "page": 6,
+        "task": true,
+        "id": "t7"
+      },
+      {
+        "text": "Discover ==Light Gray==",
+        "page": 6,
+        "task": true,
+        "id": "t8"
+      },
+      {
+        "text": "Discover ==Lime==",
+        "page": 6,
+        "task": true,
+        "id": "t9"
+      },
+      {
+        "text": "Discover ==Magenta==",
+        "page": 6,
+        "task": true,
+        "id": "t10"
+      },
+      {
+        "text": "Discover ==Orange==",
+        "page": 6,
+        "task": true,
+        "id": "t11"
+      },
+      {
+        "text": "Discover ==Pink==",
+        "page": 6,
+        "task": true,
+        "id": "t12"
+      },
+      {
+        "text": "Discover ==Purple==",
+        "page": 6,
+        "task": true,
+        "id": "t13"
+      },
+      {
+        "text": "Discover ==Red==",
+        "page": 6,
+        "task": true,
+        "id": "t14"
+      },
+      {
+        "text": "Discover ==White==",
+        "page": 6,
+        "task": true,
+        "id": "t15"
+      },
+      {
+        "text": "Discover ==Yellow==",
+        "page": 6,
+        "task": true,
+        "id": "t16"
+      }
+    ]
+  },
+  {
+    "title": "Age of Discovery",
+    "page": 7,
+    "entries": [
+      {
+        "text": "Use the Crafting Stick to make a Colorless Crafting Table",
+        "page": 7,
+        "task": true,
+        "id": "t17"
+      },
+      {
+        "text": "Use a Barrel to create Dirt",
+        "page": 7,
+        "task": true,
+        "id": "t18"
+      },
+      {
+        "text": "Eat Dirt!",
+        "page": 7,
+        "task": true,
+        "id": "t19"
+      },
+      {
+        "text": "Use Colored Planks to craft any Color Crafting Table",
+        "page": 7,
+        "task": true,
+        "id": "t20"
+      },
+      {
+        "text": "Change the color of a Sapling by using Dye on it",
+        "page": 7,
+        "task": true,
+        "id": "t21"
+      },
+      {
+        "text": "Use any Dye and a Stick to make a Color Torch",
+        "page": 7,
+        "task": true,
+        "id": "t22"
+      },
+      {
+        "text": "Craft a Crafting Station to make recipes not available in the Color Crafting Tables",
+        "page": 7,
+        "task": true,
+        "id": "t23"
+      },
+      {
+        "text": "Craft a Silent's Gear Sickle to break Leaves faster",
+        "page": 7,
+        "task": true,
+        "id": "t24"
+      },
+      {
+        "text": "Craft a Silent's Gear Axe to break Wood faster",
+        "page": 7,
+        "task": true,
+        "id": "t25"
+      },
+      {
+        "text": "Right Click with an Axe on a Log to get a Template Board",
+        "page": 7,
+        "task": true,
+        "id": "t26"
+      },
+      {
+        "text": "Use a Crucible to melt Leaves or Saplings to get Water (or collect via rain)",
+        "page": 7,
+        "task": true,
+        "id": "t27"
+      },
+      {
+        "text": "Infest Leaves with a Silkworm to obtain String",
+        "page": 7,
+        "task": true,
+        "id": "t28"
+      },
+      {
+        "text": "Use a Campfire to obtain Ash and use it to craft Cobblestone",
+        "page": 7,
+        "task": true,
+        "id": "t29"
+      },
+      {
+        "text": "Use a Hammer from Ex Nihilo or a Millstone to create Sand",
+        "page": 7,
+        "task": true,
+        "id": "t30"
+      },
+      {
+        "text": "Use Sand on a Barrel filled with Water to make Clay",
+        "page": 7,
+        "task": true,
+        "id": "t31"
+      },
+      {
+        "text": "Craft an Eccentric Tome to get all Guide Books",
+        "page": 7,
+        "task": true,
+        "id": "t32"
+      }
+    ]
+  },
+  {
+    "title": "Stone Age",
+    "page": 8,
+    "entries": [
+      {
+        "text": "Make Lava in a Fired Crucible",
+        "page": 8,
+        "task": true,
+        "id": "t33"
+      },
+      {
+        "text": "Obtain Obsidian",
+        "page": 8,
+        "task": true,
+        "id": "t34"
+      },
+      {
+        "text": "Automate your Cobblestone generation",
+        "page": 8,
+        "task": true,
+        "id": "t35"
+      },
+      {
+        "text": "Upgrade your Silent's Gear tools with a Stone Material (Cobblestone, Andesite, Diorite, Granite)",
+        "page": 8,
+        "task": true,
+        "id": "t36"
+      }
+    ]
+  },
+  {
+    "title": "Chromatic Age",
+    "page": 9,
+    "entries": [
+      {
+        "text": "Throw Dye into Water to change its color",
+        "page": 9,
+        "task": true,
+        "id": "t37"
+      },
+      {
+        "text": "Use Color Dyed Water to convert Sand into a Dye Block",
+        "page": 9,
+        "task": true,
+        "id": "t38"
+      },
+      {
+        "text": "Click on a Color Leaves block with Dye to create Flowers",
+        "page": 9,
+        "task": true,
+        "id": "t39"
+      },
+      {
+        "text": "Throw a Color Sapling into Water to change its color",
+        "page": 9,
+        "task": true,
+        "id": "t40"
+      },
+      {
+        "text": "Throw a Color Sapling into Fire or Lava to change its color",
+        "page": 9,
+        "task": true,
+        "id": "t41"
+      },
+      {
+        "text": "Use Dripstone to convert a Block of Sand into a Dye Block",
+        "page": 9,
+        "task": true,
+        "id": "t42"
+      }
+    ]
+  },
+  {
+    "title": "Age of Automation",
+    "page": 10,
+    "entries": [
+      {
+        "text": "Use a Stirling or Combustion Generator to make power",
+        "page": 10,
+        "task": true,
+        "id": "t43"
+      },
+      {
+        "text": "Craft RGB Dye",
+        "page": 10,
+        "task": true,
+        "id": "t44"
+      },
+      {
+        "text": "Craft a Blender to Mix Dyes together",
+        "page": 10,
+        "task": true,
+        "id": "t45"
+      },
+      {
+        "text": "Craft a Printer to automate resource collection",
+        "page": 10,
+        "task": true,
+        "id": "t46"
+      },
+      {
+        "text": "Obtain an EnderIO Grain of Infinity",
+        "page": 10,
+        "task": true,
+        "id": "t47"
+      },
+      {
+        "text": "Use a Pulverizer as a Catalyst in a Pulverizer",
+        "page": 10,
+        "task": true,
+        "id": "t48"
+      },
+      {
+        "text": "Speed up your machines by capturing the Warden with the Industrial Foregoing Souls mod",
+        "page": 10,
+        "task": true,
+        "id": "t49"
+      }
+    ]
+  },
+  {
+    "title": "Age of Power",
+    "page": 11,
+    "entries": [
+      {
+        "text": "Create a Passively cooled reactor from the Bigger Reactors Mod",
+        "page": 11,
+        "task": true,
+        "id": "t50"
+      },
+      {
+        "text": "Create an Actively cooled reactor from the Bigger Reactors Mod",
+        "page": 11,
+        "task": true,
+        "id": "t51"
+      },
+      {
+        "text": "Create a 32x48x32 Passively cooled reactor",
+        "page": 11,
+        "task": true,
+        "id": "t52"
+      },
+      {
+        "text": "Create a Turbine from the Bigger Reactors Mod",
+        "page": 11,
+        "task": true,
+        "id": "t53"
+      },
+      {
+        "text": "Produce 1,000 RF/t",
+        "page": 11,
+        "task": true,
+        "id": "t54"
+      },
+      {
+        "text": "Produce 10,000 RF/t",
+        "page": 11,
+        "task": true,
+        "id": "t55"
+      },
+      {
+        "text": "Produce 100k RF/t",
+        "page": 11,
+        "task": true,
+        "id": "t56"
+      },
+      {
+        "text": "Produce 1 million RF/t",
+        "page": 11,
+        "task": true,
+        "id": "t57"
+      },
+      {
+        "text": "Craft Energetic Shears and use them to shear Energetic Sheep to collect energy",
+        "page": 11,
+        "task": true,
+        "id": "t58"
+      },
+      {
+        "text": "Use Energetic Shears or Energetic Wool to add power to a machine by discharging the shears or right-clicking the Wool in supported machines/batteries",
+        "page": 11,
+        "task": true,
+        "id": "t59"
+      },
+      {
+        "text": "Collect all 16 colors of Energetic Sheep",
+        "page": 11,
+        "task": true,
+        "id": "t60"
+      }
+    ]
+  },
+  {
+    "title": "Age of Life",
+    "page": 12,
+    "entries": [
+      {
+        "text": "Herd all 16 Colorful Villagers (Villager Trades will automatically cycle after a short duration of time)",
+        "page": 12,
+        "task": true,
+        "id": "t61"
+      },
+      {
+        "text": "Obtain all 146 Trophies",
+        "page": 12,
+        "task": true,
+        "id": "t62"
+      },
+      {
+        "text": "Find and pickup a Mob Spawner",
+        "page": 12,
+        "task": true,
+        "id": "t63"
+      },
+      {
+        "text": "Change a Mob Spawner by right-clicking on it with a Trophy",
+        "page": 12,
+        "task": true,
+        "id": "t64"
+      },
+      {
+        "text": "Use a Mega Torch to block creature spawns",
+        "page": 12,
+        "task": true,
+        "id": "t65"
+      },
+      {
+        "text": "Build a Modular Golem",
+        "page": 12,
+        "task": true,
+        "id": "t66"
+      },
+      {
+        "text": "Build a Modular Wolf",
+        "page": 12,
+        "task": true,
+        "id": "t67"
+      },
+      {
+        "text": "Build a Modular Humanoid",
+        "page": 12,
+        "task": true,
+        "id": "t68"
+      },
+      {
+        "text": "Gear up a Modular Golem with Netherite",
+        "page": 12,
+        "task": true,
+        "id": "t69"
+      },
+      {
+        "text": "Fully upgrade a Modular Golem",
+        "page": 12,
+        "task": true,
+        "id": "t70"
+      }
+    ]
+  },
+  {
+    "title": "Normal Gateways",
+    "page": 13,
+    "entries": [
+      {
+        "text": "Obtain a Normal Gateway Pearl",
+        "page": 13,
+        "task": true,
+        "id": "t71"
+      },
+      {
+        "text": "Complete a Gateway and receive a mob Trophy",
+        "page": 13,
+        "task": true,
+        "id": "t72"
+      },
+      {
+        "text": "Right-click on a Trophy to activate it (and again to deactivate)",
+        "page": 13,
+        "task": true,
+        "id": "t73"
+      },
+      {
+        "text": "Complete all 146 Normal Gateways (not Titan)",
+        "page": 13,
+        "task": true,
+        "id": "t74"
+      },
+      {
+        "text": "Complete the Normal Ender Dragon Gateway",
+        "page": 13,
+        "task": true,
+        "id": "t75"
+      }
+    ]
+  },
+  {
+    "title": "Titan Gateways",
+    "page": 14,
+    "entries": [
+      {
+        "text": "Obtain a Titan Gateway Pearl",
+        "page": 14,
+        "task": true,
+        "id": "t76"
+      },
+      {
+        "text": "Complete wave 50 of any Titan Gateway",
+        "page": 14,
+        "task": true,
+        "id": "t77"
+      },
+      {
+        "text": "Complete wave 100 of any Titan Gateway",
+        "page": 14,
+        "task": true,
+        "id": "t78"
+      },
+      {
+        "text": "Complete wave 150 of any Titan Gateway",
+        "page": 14,
+        "task": true,
+        "id": "t79"
+      }
+    ]
+  },
+  {
+    "title": "Challenge Gateways",
+    "page": 15,
+    "entries": [
+      {
+        "text": "Complete all 16 Challenge Gateways",
+        "page": 15,
+        "task": true,
+        "id": "t80"
+      }
+    ]
+  },
+  {
+    "title": "Age of Farming",
+    "page": 16,
+    "entries": [
+      {
+        "text": "Obtain an Inferium Seed",
+        "page": 16,
+        "task": true,
+        "id": "t81"
+      },
+      {
+        "text": "Capture a Cow in a Jar",
+        "page": 16,
+        "task": true,
+        "id": "t82"
+      },
+      {
+        "text": "Grow Sugar Cane from the bottom of the world to max height (y=448)",
+        "page": 16,
+        "task": true,
+        "id": "t83"
+      },
+      {
+        "text": "Obtain all 16 color Mystical Agriculture Seeds",
+        "page": 16,
+        "task": true,
+        "id": "t84"
+      },
+      {
+        "text": "Obtain an RGB Essence Seed",
+        "page": 16,
+        "task": true,
+        "id": "t85"
+      }
+    ]
+  },
+  {
+    "title": "Age of Travel",
+    "page": 17,
+    "entries": [
+      {
+        "text": "Fly",
+        "page": 17,
+        "task": true,
+        "id": "t86"
+      },
+      {
+        "text": "Craft a Wayback Stone to easily teleport to your spawn location from anywhere",
+        "page": 17,
+        "task": true,
+        "id": "t87"
+      },
+      {
+        "text": "Use a Bubble Blower to place a block in the air",
+        "page": 17,
+        "task": true,
+        "id": "t88"
+      },
+      {
+        "text": "Travel to the Nether",
+        "page": 17,
+        "task": true,
+        "id": "t89"
+      },
+      {
+        "text": "Travel to the End",
+        "page": 17,
+        "task": true,
+        "id": "t90"
+      }
+    ]
+  },
+  {
+    "title": "Age of Miscellaneous",
+    "page": 18,
+    "entries": [
+      {
+        "text": "Craft a Create Sabers Saber",
+        "page": 18,
+        "task": true,
+        "id": "t91"
+      },
+      {
+        "text": "Craft a Hammock to sleep to night time",
+        "page": 18,
+        "task": true,
+        "id": "t92"
+      },
+      {
+        "text": "Fall through the void into a pool of water",
+        "page": 18,
+        "task": true,
+        "id": "t93"
+      },
+      {
+        "text": "Grow your head to 150% by crafting 2 of the same heads together",
+        "page": 18,
+        "task": true,
+        "id": "t94"
+      },
+      {
+        "text": "Grow your head to 250% by crafting 2 of the same heads together",
+        "page": 18,
+        "task": true,
+        "id": "t95"
+      },
+      {
+        "text": "Collect all 6 Limbs of any one mob (Head, Torso, Arms, Legs)",
+        "page": 18,
+        "task": true,
+        "id": "t96"
+      },
+      {
+        "text": "Use an Organic Matter Compressor to transform matter into Loot Bags",
+        "page": 18,
+        "task": true,
+        "id": "t97"
+      }
+    ]
+  },
+  {
+    "title": "Age of Magic · Ars Nouveau",
+    "page": 19,
+    "entries": [
+      {
+        "text": "Make a Source Gem",
+        "page": 19,
+        "task": true,
+        "id": "t98"
+      },
+      {
+        "text": "Make a Spellbook",
+        "page": 19,
+        "task": true,
+        "id": "t99"
+      },
+      {
+        "text": "Make a Scribe's Table",
+        "page": 19,
+        "task": true,
+        "id": "t100"
+      },
+      {
+        "text": "Generate Source for machines",
+        "page": 19,
+        "task": true,
+        "id": "t101"
+      },
+      {
+        "text": "Make an Enchanting Apparatus",
+        "page": 19,
+        "task": true,
+        "id": "t102"
+      },
+      {
+        "text": "Make a Ritual Brazier",
+        "page": 19,
+        "task": true,
+        "id": "t103"
+      },
+      {
+        "text": "Use a Crush Spell to automate Sand and Gravel",
+        "page": 19,
+        "task": true,
+        "id": "t104"
+      },
+      {
+        "text": "Use a Ritual of Summon Wilden and defeat them",
+        "page": 19,
+        "task": true,
+        "id": "t105"
+      },
+      {
+        "text": "Use a Ritual of Flight to fly around!",
+        "page": 19,
+        "task": true,
+        "id": "t106"
+      },
+      {
+        "text": "Summon a Weald Walker by performing an Awakening ritual near an Archwood Tree",
+        "page": 19,
+        "task": true,
+        "id": "t107"
+      },
+      {
+        "text": "Use Starbuncles to automate item retrieval",
+        "page": 19,
+        "task": true,
+        "id": "t108"
+      },
+      {
+        "text": "Use Wixies to automate Potion Brewing",
+        "page": 19,
+        "task": true,
+        "id": "t109"
+      },
+      {
+        "text": "Automate a farm with a Harvest Ritual",
+        "page": 19,
+        "task": true,
+        "id": "t110"
+      },
+      {
+        "text": "Make an island using a Conjure Island ritual (either plains or desert)",
+        "page": 19,
+        "task": true,
+        "id": "t111"
+      },
+      {
+        "text": "Summon and defeat the Wilden Chimera",
+        "page": 19,
+        "task": true,
+        "id": "t112"
+      },
+      {
+        "text": "Automate a farm with Spell Turrets",
+        "page": 19,
+        "task": true,
+        "id": "t113"
+      },
+      {
+        "text": "Farm mob drops with Drygmies",
+        "page": 19,
+        "task": true,
+        "id": "t114"
+      },
+      {
+        "text": "Summon a Decoy of yourself",
+        "page": 19,
+        "task": true,
+        "id": "t115"
+      },
+      {
+        "text": "Capture every boss in a Containment Jar",
+        "page": 19,
+        "task": true,
+        "id": "t116"
+      },
+      {
+        "text": "Generate Source using every type of Sourcelink",
+        "page": 19,
+        "task": true,
+        "id": "t117"
+      },
+      {
+        "text": "Fully upgrade a set of Ars Nouveau armor (Tier 3 fill all thread slots)",
+        "page": 19,
+        "task": true,
+        "id": "t118"
+      },
+      {
+        "text": "Summon a Familiar",
+        "page": 19,
+        "task": true,
+        "id": "t119"
+      },
+      {
+        "text": "Use a Scryer's Oculus to remotely access a block",
+        "page": 19,
+        "task": true,
+        "id": "t120"
+      },
+      {
+        "text": "Teleport with a Warp Scroll/Portal",
+        "page": 19,
+        "task": true,
+        "id": "t121"
+      },
+      {
+        "text": "Use a Flask Cannon",
+        "page": 19,
+        "task": true,
+        "id": "t122"
+      }
+    ]
+  },
+  {
+    "title": "Occultism",
+    "page": 20,
+    "entries": [
+      {
+        "text": "Eat Demon's Dream Fruit to get the 3rd Eye Effect",
+        "page": 20,
+        "task": true,
+        "id": "t123"
+      },
+      {
+        "text": "Make a Spiritfire",
+        "page": 20,
+        "task": true,
+        "id": "t124"
+      },
+      {
+        "text": "Obtain White Chalk",
+        "page": 20,
+        "task": true,
+        "id": "t125"
+      },
+      {
+        "text": "Summon a Crusher Spirit to help automate resources",
+        "page": 20,
+        "task": true,
+        "id": "t126"
+      },
+      {
+        "text": "Summon a Possessed Endermite and kill it for Endstone",
+        "page": 20,
+        "task": true,
+        "id": "t127"
+      },
+      {
+        "text": "Use an Ars Nouveau Containment Jar to capture an Occultism Spirit, letting them work without decaying",
+        "page": 20,
+        "task": true,
+        "id": "t128"
+      },
+      {
+        "text": "Capture one of each Trader Spirit in an Ars Nouveau Containment Jar",
+        "page": 20,
+        "task": true,
+        "id": "t129"
+      },
+      {
+        "text": "Create a Dimensional Matrix for mass item storage",
+        "page": 20,
+        "task": true,
+        "id": "t130"
+      },
+      {
+        "text": "Summon a Djinni Machine Operator to automate crafting with the Dimensional Matrix",
+        "page": 20,
+        "task": true,
+        "id": "t131"
+      },
+      {
+        "text": "Use a Dimensional Mineshaft to automate resources",
+        "page": 20,
+        "task": true,
+        "id": "t132"
+      },
+      {
+        "text": "Have a Dimensional Matrix with max slots (12416, with one tier 4 on all sides including above and below)",
+        "page": 20,
+        "task": true,
+        "id": "t133"
+      },
+      {
+        "text": "Summon an Afrit",
+        "page": 20,
+        "task": true,
+        "id": "t134"
+      },
+      {
+        "text": "Summon the Wild Hunt and defeat it",
+        "page": 20,
+        "task": true,
+        "id": "t135"
+      },
+      {
+        "text": "Use a Transporter Spirit to automate item transport",
+        "page": 20,
+        "task": true,
+        "id": "t136"
+      },
+      {
+        "text": "Use a Janitor Spirit to automate collecting items",
+        "page": 20,
+        "task": true,
+        "id": "t137"
+      },
+      {
+        "text": "Summon a Familiar and capture it in a Familiar Ring",
+        "page": 20,
+        "task": true,
+        "id": "t138"
+      },
+      {
+        "text": "Summon a Demonic Wife/Husband",
+        "page": 20,
+        "task": true,
+        "id": "t139"
+      }
+    ]
+  },
+  {
+    "title": "Age of the Botanist",
+    "page": 21,
+    "entries": [
+      {
+        "text": "Craft a Petal Apothecary",
+        "page": 21,
+        "task": true,
+        "id": "t140"
+      },
+      {
+        "text": "Create 64 Livingwood and 64 Livingrock with a Pure Daisy",
+        "page": 21,
+        "task": true,
+        "id": "t141"
+      },
+      {
+        "text": "Craft a tiny potato and name it Direwolf20",
+        "page": 21,
+        "task": true,
+        "id": "t142"
+      },
+      {
+        "text": "Craft a Mana Pool and a Mana Spreader",
+        "page": 21,
+        "task": true,
+        "id": "t143"
+      },
+      {
+        "text": "Craft a Wand of the Forest",
+        "page": 21,
+        "task": true,
+        "id": "t144"
+      },
+      {
+        "text": "Create a portal to Alfheim",
+        "page": 21,
+        "task": true,
+        "id": "t145"
+      },
+      {
+        "text": "Use the portal to Alfheim to trade for Dye or resources",
+        "page": 21,
+        "task": true,
+        "id": "t146"
+      },
+      {
+        "text": "Create an automated flower farm with a Jaded Amaranthus",
+        "page": 21,
+        "task": true,
+        "id": "t147"
+      }
+    ]
+  },
+  {
+    "title": "Mastery",
+    "page": 22,
+    "entries": [
+      {
+        "text": "Automate a Pure Daisy with only Botania and vanilla mechanics",
+        "page": 22,
+        "task": true,
+        "id": "t148"
+      },
+      {
+        "text": "Craft and fill a Terrasteel Mana Ring",
+        "page": 22,
+        "task": true,
+        "id": "t149"
+      },
+      {
+        "text": "Complete the Ritual of Gaia",
+        "page": 22,
+        "task": true,
+        "id": "t150"
+      },
+      {
+        "text": "Complete the Ritual of Gaia II",
+        "page": 22,
+        "task": true,
+        "id": "t151"
+      }
+    ]
+  },
+  {
+    "title": "Age of Legends",
+    "page": 23,
+    "entries": [
+      {
+        "text": "Defeat the Warden",
+        "page": 23,
+        "task": true,
+        "id": "t152"
+      },
+      {
+        "text": "Defeat the Ender Dragon",
+        "page": 23,
+        "task": true,
+        "id": "t153"
+      },
+      {
+        "text": "Defeat the Wither",
+        "page": 23,
+        "task": true,
+        "id": "t154"
+      },
+      {
+        "text": "Defeat the Gaia Guardian",
+        "page": 23,
+        "task": true,
+        "id": "t155"
+      },
+      {
+        "text": "Defeat the Ghast Cow",
+        "page": 23,
+        "task": true,
+        "id": "t156"
+      }
+    ]
+  },
+  {
+    "title": "Age of Hoarding",
+    "page": 24,
+    "entries": [
+      {
+        "text": "Create a 9x9x9 Colossal Chest",
+        "page": 24,
+        "task": true,
+        "id": "t157"
+      },
+      {
+        "text": "Obtain a Netherite Backpack from Sophisticated Backpacks",
+        "page": 24,
+        "task": true,
+        "id": "t158"
+      },
+      {
+        "text": "Craft and use the Inception Upgrade in a Sophisticated Backpack to add more backpacks to your backpacks",
+        "page": 24,
+        "task": true,
+        "id": "t159"
+      },
+      {
+        "text": "Craft and use the Everlasting Upgrade in a Sophisticated Backpack to keep your stuff safe from the void",
+        "page": 24,
+        "task": true,
+        "id": "t160"
+      },
+      {
+        "text": "Connect your Applied Energistics Storage System across dimensions using the Quantum Link Chamber",
+        "page": 24,
+        "task": true,
+        "id": "t161"
+      }
+    ]
+  },
+  {
+    "title": "Age of Worlds",
+    "page": 25,
+    "entries": [
+      {
+        "text": "Acquire and research a Lost Knowledge Pattern",
+        "page": 25,
+        "task": true,
+        "id": "t162"
+      },
+      {
+        "text": "Create and travel to an RFTools Dimension",
+        "page": 25,
+        "task": true,
+        "id": "t163"
+      },
+      {
+        "text": "Create a dimension full of Potatoes",
+        "page": 25,
+        "task": true,
+        "id": "t164"
+      },
+      {
+        "text": "Infuse your Infuser Machine to 100%",
+        "page": 25,
+        "task": true,
+        "id": "t165"
+      },
+      {
+        "text": "Destroy a created dimension by sending a Block of TNT to a dimension with the Dimension Editor",
+        "page": 25,
+        "task": true,
+        "id": "t166"
+      },
+      {
+        "text": "Create a dimension of RGB Blocks",
+        "page": 25,
+        "task": true,
+        "id": "t167"
+      }
+    ]
+  },
+  {
+    "title": "Age of Dragons",
+    "page": 26,
+    "entries": [
+      {
+        "text": "Craft the Draconic Chestpiece",
+        "page": 26,
+        "task": true,
+        "id": "t168"
+      },
+      {
+        "text": "Draconic Pickaxe",
+        "page": 26,
+        "task": true,
+        "id": "t169"
+      },
+      {
+        "text": "Draconic Axe",
+        "page": 26,
+        "task": true,
+        "id": "t170"
+      },
+      {
+        "text": "Draconic Shovel",
+        "page": 26,
+        "task": true,
+        "id": "t171"
+      },
+      {
+        "text": "Draconic Hoe",
+        "page": 26,
+        "task": true,
+        "id": "t172"
+      },
+      {
+        "text": "Draconic Staff of Power",
+        "page": 26,
+        "task": true,
+        "id": "t173"
+      }
+    ]
+  },
+  {
+    "title": "Age of Dragons (continued)",
+    "page": 27,
+    "entries": [
+      {
+        "text": "Automate Wither killing",
+        "page": 27,
+        "task": true,
+        "id": "t174"
+      },
+      {
+        "text": "Defeat the Chaos Dragon",
+        "page": 27,
+        "task": true,
+        "id": "t175"
+      },
+      {
+        "text": "Build a tier 6 Energy Core or Higher (Max is 8)",
+        "page": 27,
+        "task": true,
+        "id": "t176"
+      },
+      {
+        "text": "Make a Charm of Dislocation",
+        "page": 27,
+        "task": true,
+        "id": "t177"
+      },
+      {
+        "text": "Fill a tier 6 Draconic Energy Core",
+        "page": 27,
+        "task": true,
+        "id": "t178"
+      },
+      {
+        "text": "Make a Draconic Chest",
+        "page": 27,
+        "task": true,
+        "id": "t179"
+      }
+    ]
+  },
+  {
+    "title": "Age of Simulation",
+    "page": 28,
+    "entries": [
+      {
+        "text": "Obtain a Hostile Neural Network Faulty Data Model for any mob",
+        "page": 28,
+        "task": true,
+        "id": "t180"
+      },
+      {
+        "text": "Upgrade a Hostile Neural Network Data Model to Self Aware",
+        "page": 28,
+        "task": true,
+        "id": "t181"
+      },
+      {
+        "text": "Use the Wither Prediction in the Loot Fabricator to create Nether Stars",
+        "page": 28,
+        "task": true,
+        "id": "t182"
+      },
+      {
+        "text": "Upgrade the Ender Dragon Data Model to Self Aware",
+        "page": 28,
+        "task": true,
+        "id": "t183"
+      },
+      {
+        "text": "Upgrade the Chaos Guardian Data Model to Self Aware",
+        "page": 28,
+        "task": true,
+        "id": "t184"
+      }
+    ]
+  },
+  {
+    "title": "Age of Craziness",
+    "page": 29,
+    "entries": [
+      {
+        "text": "Collect all 238 Hats",
+        "page": 29,
+        "task": true,
+        "id": "t185"
+      },
+      {
+        "text": "Obtain 90 total hearts of health",
+        "page": 29,
+        "task": true,
+        "id": "t186"
+      },
+      {
+        "text": "Craft an Infinity Wand",
+        "page": 29,
+        "task": true,
+        "id": "t187"
+      },
+      {
+        "text": "Create a Perfect Sushi Roll",
+        "page": 29,
+        "task": true,
+        "id": "t188"
+      },
+      {
+        "text": "Create a Culinary Construct Sandwich full of different types of Perfect Sushi",
+        "page": 29,
+        "task": true,
+        "id": "t189"
+      },
+      {
+        "text": "Fill an entire chunk with Colorless Dye Blocks (16x448x16)",
+        "page": 29,
+        "task": true,
+        "id": "t190"
+      }
+    ]
+  },
+  {
+    "title": "Age of Excess · AKA Nobody Is Crazy Enough to Actually Do This",
+    "page": 30,
+    "entries": [
+      {
+        "text": "Fill the Tier 8 Draconic Energy Core to max 9,223,000,000,000,000,000op",
+        "page": 30,
+        "task": true,
+        "id": "t191"
+      },
+      {
+        "text": "Fill an Infinity Tool to max charge",
+        "page": 30,
+        "task": true,
+        "id": "t192"
+      },
+      {
+        "text": "Create a maximum size Passively cooled reactor (64x64x64)",
+        "page": 30,
+        "task": true,
+        "id": "t193"
+      }
+    ]
+  },
+  {
+    "title": "Hidden pages & final task",
+    "page": 41,
+    "entries": [
+      {
+        "text": "There's nothing else back here!",
+        "page": 41,
+        "task": false
+      },
+      {
+        "text": "What do you want? Stop it!",
+        "page": 52,
+        "task": false
+      },
+      {
+        "text": "Quit it!",
+        "page": 63,
+        "task": false
+      },
+      {
+        "text": ">.>",
+        "page": 82,
+        "task": false
+      },
+      {
+        "text": "<.<",
+        "page": 90,
+        "task": false
+      },
+      {
+        "text": "Discover the SCP 1689 Dimension",
+        "page": 93,
+        "task": true,
+        "id": "t194"
+      }
+    ]
+  }
+]
