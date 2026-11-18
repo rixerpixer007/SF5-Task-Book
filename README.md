@@ -1,5 +1,9 @@
 # SkyFactory 5 Task Book
 
+[**Open the SkyFactory 5 Task Book — Online Reader & Checklist**](https://rixerpixer007.github.io/SF5-Task-Book/)
+
+Read and search the SkyFactory 5 task book without opening Minecraft. Browse chapters and track completed tasks in your browser. This is an unofficial fan-made viewer; progress saves locally and does not sync with Minecraft.
+
 A standalone task-book viewer that combines Minecraft's book-reading experience with navigation and document tools inspired by macOS Preview. The reader displays a Minecraft-style two-page book; the original prototype is preserved under `reference/`.
 
 ## Development
